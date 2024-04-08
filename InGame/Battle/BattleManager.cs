@@ -13,21 +13,23 @@ namespace Program.InGame.Battle {
         [field: SerializeField] public AnyPhase phase { private set; get; } = AnyPhase.PreparationPhase;
         int turn = 0;
 
-        int decision_count = 0;
-        int order_count = 0;
+        int decision_count = 0; //次のフェイズへ行っていいプレイヤーの人数
+        int order_count = 0;    //スキルの使用を決めたプレイヤーの順番
 
         [SerializeField] FighterSkillSetting[] fighters = new FighterSkillSetting[MyConst.PLAYER_MAX];
 
         int fighters_count = 0;
-        [SerializeField] int[] using_order;
+        [SerializeField] int[] using_order; //スキルの使用順
 
         public WinLose[] win_lose { private set; get; } = new WinLose[MyConst.PLAYER_MAX];
 
+        //スキル側からスキルの使用（アニメーション）などが終わったかを知らせる用
         bool isCallBack = false;
         public void CallBack() { Debug.Log("CalllBack"); isCallBack = true; }
 
         [SerializeField] Text phase_text, turn_text;
         [SerializeField] float phaseChange_animation_time = 1.2f;
+
 
         void CameraPosChanger() {
 

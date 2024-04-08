@@ -35,12 +35,12 @@ namespace Program.InGame.Battle {
             );
         }
 
-        //©•ª‘¤‚Å‚Ìİ’è
+        //©•ª‚Ì’[––‘¤‚Å‚Ìİ’è
         public void SetUP() {
             base.Start();
         }
 
-        //‘Šè‘¤‚Å‚Ìİ’è
+        //‘Šè‚Ì’[––‘¤‚Å‚Ìİ’è
         public void SetUP(
             string name, float life, float atk, float def, float spd, string job,
             string skill0, string skill1, string skill2, string skill3, string skill4, string skill5) {

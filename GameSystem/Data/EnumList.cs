@@ -2,7 +2,9 @@ namespace Program.GameSystem.Data {
 
     public class EnumList { }
 
-    //スキルパワー
+    /// <summary>
+    /// スキルパワーの種類
+    /// </summary>
     public enum SkillPower {
         Low,
         Middle,
@@ -10,6 +12,9 @@ namespace Program.GameSystem.Data {
         End,
     }
 
+    /// <summary>
+    /// バトル時に使うスキルの種類
+    /// </summary>
     public enum AbilityType {
         Low,
         Middle,
@@ -18,7 +23,9 @@ namespace Program.GameSystem.Data {
         End,
     }
 
-    //入力パターン
+    /// <summary>
+    /// 入力の種類
+    /// </summary>
     public enum InputPattern {
         Right, Left, Up, Down,
         RightArrow, LeftArrow, UpArrow, DownArrow,
@@ -29,7 +36,9 @@ namespace Program.GameSystem.Data {
         End,
     }
 
-    //各フェイズ
+    /// <summary>
+    /// 各フェイズの種類
+    /// </summary>
     public enum AnyPhase {
         PreparationPhase,
         SelectPhase,
@@ -39,6 +48,9 @@ namespace Program.GameSystem.Data {
         End,
     }
 
+    /// <summary>
+    /// 勝敗の種類
+    /// </summary>
     public enum WinLose {
         Win,Lose,End,
     }

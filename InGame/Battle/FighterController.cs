@@ -119,14 +119,17 @@ namespace Program.InGame.Battle {
 
         private void Update() {
 
+            //フェイズの切り替わりを確認
             PhaseChange(battleManager.phase);
 
+            //UIの調整
             life_gauge.value = myStatus.life;
             charge_gauge.value = myStatus.charge;
 
             life_vol_text.text = (int)(myStatus.life *10)+"/"+life_max*10;
             charge_vol_text.text = myStatus.charge + "/"+MyConst.CHARGE_MAX;
 
+            //プレイヤーの調整
             transform.position = new Vector2(myStatus.pos, pos_y);
         }
 

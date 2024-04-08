@@ -1,5 +1,8 @@
 namespace Program.GameSystem.Data {
-
+    
+    /// <summary>
+    /// 定数をまとめたクラス
+    /// </summary>
     public class MyConst {
 
         public const int LOW_MAX = 3, MIDDLE_MAX = 2, HIGH_MAX = 1;
@@ -9,7 +12,7 @@ namespace Program.GameSystem.Data {
 
         public const int CHARGE_PERCENT = 50, CHARGE_MAX = 150;
 
-        //SkillSelectController
+        //SkillSelectControllerで使用
         public const int CHOICE_IMAGE = 0, SKILL_IMAGE = 1;    //スキルボタンの子供の順番
     }
 }
